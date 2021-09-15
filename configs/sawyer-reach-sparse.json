@@ -1,0 +1,29 @@
+{
+    "env_name": "sawyer-reach",
+    "n_train_tasks": 50,
+    "n_eval_tasks": 10,
+    "env_params": {
+        "sparse": true,
+        "n_tasks": 60,
+        "randomize_tasks": true
+    }
+    ,
+    "algo_params": {
+        "num_iterations": 40,
+        "num_tasks_sample": 10,
+        "num_initial_steps": 2000,
+        "num_steps_prior": 400,
+        "num_steps_posterior": 600,
+        "num_extra_rl_steps_posterior": 0,
+        "num_train_steps_per_itr": 1000,
+        "num_evals": 2,
+        "max_path_length": 150,
+        "discount": 0.99,
+        "num_steps_per_eval": 600,
+        "reward_scale": 10,
+        "kl_lambda": 0.1,
+        "num_exp_traj_eval": 2,
+        "log_success_rate": 1,
+        "utility_batch_size": 256
+    }
+}
